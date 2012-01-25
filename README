@@ -1,0 +1,16 @@
+MOOTOOLS STRETCHER
+
+Stretches an element to fit another element. Useful for full screen backgrounds.
+
+CONFIGURATION
+
+<div style="position:relative;overflow:hidden;">
+	<img src="#" style="position:absolute;" id="stretchMe" />
+</div>
+<script>
+window.addEvent('domready', function(){
+	new Stretcher('stretchMe', {
+		autoStretch: true
+	});
+});
+</script>
