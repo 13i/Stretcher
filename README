@@ -2,7 +2,11 @@ MOOTOOLS STRETCHER
 
 Stretches an element to fit another element. Useful for full screen backgrounds.
 
-CONFIGURATION
+DEPENDENCIES
+
+* Mootools (Tested on 1.4, should work on 1.3)
+
+INSTALL
 
 <div style="position:relative;overflow:hidden;">
 	<img src="#" style="position:absolute;" id="stretchMe" />
@@ -14,3 +18,17 @@ window.addEvent('domready', function(){
 	});
 });
 </script>
+
+CONFIGURE
+
+class Stretcher(element, [options={}, setup=true]);
+
+element		The element to stretch ()
+options		Options (see below)
+setup		Set to false if you plan to invoke setup() later
+
+OPTIONS
+
+parent(null)	Parent element
+auto(false)		Stretche on load
+

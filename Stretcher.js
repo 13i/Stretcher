@@ -14,6 +14,7 @@ var Stretcher = new Class({
 		this.element = document.id(element);
 		this.setOptions(options);
 		this.element.store('stretcher', this);
+		var setup = [setup, true].pick();
 		if(setup) this.setup();
 	},
 	setup: function(options){
